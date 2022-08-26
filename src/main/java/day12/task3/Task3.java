@@ -1,6 +1,7 @@
 package day12.task3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Task3 {
@@ -9,6 +10,7 @@ public class Task3 {
         for (int i=0; i<12; i++){
             bands.add(new MusicBand("name "+i, 1980 + i*3));
         }
+        Collections.shuffle(bands);
         System.out.println(bands);
         bands = groupsAfter2000(bands);
         System.out.println(bands);
